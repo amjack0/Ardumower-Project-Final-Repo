@@ -1,0 +1,5 @@
+<launch>
+     <node pkg="mower_odometry" type="odom_node.py" name="odometry" output="screen"/>
+
+     <node pkg="mower_odometry" type="twist_to_rpm.py" name="twist_to_rpm" output="screen"/>
+</launch>

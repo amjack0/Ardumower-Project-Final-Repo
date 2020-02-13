@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch> 
+  <node pkg="imu" type="imu_bno_node.py" name="imu_node" respawn="true"/>
+  <rosparam command="load" file="$(find mower_localization)/params/ekf_params.yaml" />
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" clear_params="true">
+	<remap from="odometry/filtered" to="odometry/filtered_odom"/>
+  </node>
+</launch>

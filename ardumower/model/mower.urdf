@@ -1,0 +1,119 @@
+<robot name="ardumower">
+  <link name="base_link">
+  <visual>
+    <geometry>
+      <box size="0.341 0.316 0.136"/>
+    </geometry>
+    <origin rpy="0 0 0" xyz="-0.0455 0 0.15"/>
+    <material name="white">
+      <color rgba="1 1 1 1"/>
+    </material>
+  </visual>
+  </link>
+ 
+  <link name="left_wheel">
+  <visual>
+    <geometry>
+      <cylinder length="0.008" radius="0.125"/>
+    </geometry>
+    <material name="black">
+      <color rgba="0 0 0 1"/>
+    </material>
+    <!--origin rpy="1.570796 0 0" xyz="0.05795 0.187 -0.0015"/-->
+  </visual>
+</link>
+
+  <joint name="base_Lwheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin rpy="1.570796 0 0" xyz="0.0025 0.187 0.1235"/>
+</joint>
+
+  <link name="right_wheel">
+  <visual>
+    <geometry>
+      <cylinder length="0.008" radius="0.125"/>
+    </geometry>
+    <material name="black">
+      <color rgba="0 0 0 1"/>
+    </material>
+    <!--origin rpy="1.570796 0 0" xyz="0.05795 -0.187 -0.0015"/-->
+  </visual>
+  </link>
+
+  <joint name="base_Rwheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin rpy="1.570796 0 0" xyz="0.0025 -0.187 0.1235"/>
+</joint>
+
+<link name="imu">
+<visual>
+  <geometry>
+    <box size="0.020 0.027 0.010"/>
+  </geometry>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+</visual>
+</link>
+
+<joint name="base_to_imu" type="fixed">
+  <parent link="base_link"/>
+  <child link="imu"/>
+  <origin rpy="0 0 0" xyz="0 0 0.345"/>
+</joint>
+
+<link name="gps">
+<visual>
+  <geometry>
+    <box size="0.020 0.027 0.010"/>
+  </geometry>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+</visual>
+</link>
+
+<joint name="base_to_gps" type="fixed">
+  <parent link="base_link"/>
+  <child link="gps"/>
+  <origin rpy="0 0 0" xyz="0 0.08 0.223"/>
+</joint>
+
+
+<link name="laser_base">
+<visual>
+  <geometry>
+    <box size="0.050 0.050 0.041"/>
+  </geometry>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+</visual>
+</link>
+
+<joint name="base_to_laserbase" type="fixed">
+  <parent link="base_link"/>
+  <child link="laser_base"/>
+  <origin rpy="0 0 0" xyz="0.15 0 0.2385"/>
+</joint>
+
+<link name="laser">
+<visual>
+  <geometry>
+    <cylinder length="0.028" radius="0.01825"/>
+  </geometry>
+  <material name="laser">
+    <color rgba="0.15 0.25 0.35 1"/>
+  </material>
+</visual>
+</link>
+
+<joint name="base_to_laserlink" type="fixed">
+  <parent link="base_link"/>
+  <child link="laser"/>
+  <origin rpy="0 0 0" xyz="0.16 0 0.273"/>
+</joint>
+
+</robot>

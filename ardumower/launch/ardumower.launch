@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_baselink_transform" args="0.155 0 0.17 0 0 0 1 base_link laser"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="imu_baselink_transform" args="0 0 0.24 0 0 0 1 base_link imu"/>
+    <node pkg="rosserial_python" type="serial_node.py" name="serial" output="screen"/>
+    <include file="$(find mower_odometry)/launch/mower_odometry.launch"/>
+    <include file="$(find mower_navigation)/launch/mower_nav.launch"/>
+    <include file="$(find mower_localization)/launch/mower_localization.launch"/>
+
+</launch>

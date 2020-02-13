@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo_node" />
+	<node pkg="rc_control_pkg" type="rc2_pi_signal_node.py" name="rc_control" />
+	<!--node pkg="motor_tick" type="encoder2_ticks" name="odom_encoder" /-->
+	<!--node pkg="imu_mpu_final" type="imu_mpu9250_node.py" name="imu" /--> 
+	<node pkg="imu" type="imu_bno_node.py" name="imu_bno_node" />   
+</launch>
