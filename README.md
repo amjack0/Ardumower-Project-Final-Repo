@@ -12,7 +12,3 @@ This package performs outdoor navigation. It can navigate in lawn while avoiding
 
 # Test Environment
 Ubuntu 16.04.6 LTS (Xenial) + ROS Kinetic
-
-# Initial Set-up
-
-Jetson nano
