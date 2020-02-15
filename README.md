@@ -29,3 +29,11 @@ Ubuntu 16.04.6 LTS (Xenial) + ROS Kinetic
 1)Creat a new workspace in your local directory with command ```mkdir -p ~/mower_ws/src```\
 2)Simply clone this repository in your worksapce under the ```/src``` folder and build the package with```catkin_make```\
 3)
+
+
+
+
+
+# Ardumower
+
+![image(1)](https://user-images.githubusercontent.com/52165935/74588860-6c92bf00-5000-11ea-9e3c-c6eb61116ca4.jpg)
