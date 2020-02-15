@@ -12,3 +12,12 @@ This package performs outdoor navigation. It can navigate in lawn while avoiding
 
 # Test Environment
 Ubuntu 16.04.6 LTS (Xenial) + ROS Kinetic
+
+# Initial Set-up
+
+Connect the wifi driver to jetson nano and perform basic network configuration.
+ip address of the jetson nano can be obtained with ```ifconfig```
+Jetson nano can be connected with ssh command ```ssh ardumower@ip_address``` 
+Make sure to install all dependancies. update the bash file ```sudo .bashrc``` and source it ```source .bashrc```
+
+#
