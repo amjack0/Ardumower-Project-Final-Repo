@@ -27,13 +27,8 @@ Ubuntu 16.04.6 LTS (Xenial) + ROS Kinetic
 1)Creat a new workspace in your local directory with command ```mkdir -p ~/mower_ws/src```\
 2)Simply clone this repository in your worksapce under the ```/src``` folder and build the package with```catkin_make```\
 3)Update the bash file ```sudo .bashrc``` and source it ```source .bashrc```\
-4)Type command ```roslaunch ardumower ardumower.launch``` this will bring navigation and localization node.
+4)Type command ```roslaunch ardumower ardumower.launch``` this will bring navigation and localization node\
 5)Open rviz ```rosrun rviz rviz``` and open our rviz configuration file ```mower.rviz```\
-6)
-
-
-
-
 
 
 # Results
