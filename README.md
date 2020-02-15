@@ -8,7 +8,7 @@ Here's a clip on youtube:
 https://www.youtube.com/channel/UCy5HdGzm2zD_j62KLxxmGHQ?view_as=subscriber
 # Hardware 
 
-This package performs outdoor navigation. It can navigate in lawn while avoiding obstacles. This repo is made to run on a Ardumower, NVIDIA Jetson Nano with IMU (AdaFruit), Android GPS was also tested but included in the commit, and Hokuyo URG-04LX-UG01 lidar.
+This package performs outdoor navigation. It can navigate in lawn while avoiding obstacles. This repo is made to run on a Ardumower, NVIDIA Jetson Nano with IMU (AdaFruit) and Hokuyo URG-04LX-UG01 lidar. Android GPS was also tested but NOT included in this repository.
 
 # Test Environment
 Ubuntu 16.04.6 LTS (Xenial) + ROS Kinetic
@@ -24,5 +24,8 @@ Ubuntu 16.04.6 LTS (Xenial) + ROS Kinetic
 6) Update the bash file ```sudo .bashrc``` and source it ```source .bashrc```
 
 
+# Running the repository
 
-# 
+1)Creat a new workspace in your local directory with command ```mkdir -p ~/mower_ws/src```\
+2)Simply clone this repository in your worksapce under the ```/src``` folder and build the package with```catkin_make```\
+3)
