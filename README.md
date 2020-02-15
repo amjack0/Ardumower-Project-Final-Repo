@@ -18,17 +18,17 @@ Ubuntu 16.04.6 LTS (Xenial) + ROS Kinetic
 
 1)Connect the wifi driver to jetson nano and perform basic network configuration\
 2)ip address of the jetson nano can be obtained with ```ifconfig```\
-3)Jetson nano can be connected with ssh command ```ssh ardumower@ip_address```\ 
+3)Jetson nano can be connected with ssh command ```ssh ardumower@ip_address```\
 4)Before installing ros, we need to have a OS. So you should have one\
-5)Make sure to install ros framework with all dependancies. We are using melodic. For installation guide please refer,  http://wiki.ros.org/melodic/Installation/Ubuntu\ 
-6) Update the bash file ```sudo .bashrc``` and source it ```source .bashrc```\
+5)Make sure to install ros framework with all dependancies. We are using melodic. For installation guide please refer,  http://wiki.ros.org/melodic/Installation/Ubuntu
 
 
 # Running the repository
 
 1)Creat a new workspace in your local directory with command ```mkdir -p ~/mower_ws/src```\
 2)Simply clone this repository in your worksapce under the ```/src``` folder and build the package with```catkin_make```\
-3)
+3)Update the bash file ```sudo .bashrc``` and source it ```source .bashrc```\
+
 
 
 
