@@ -2,7 +2,7 @@
 Ardumower is an autonomous mobile robot which can localize and perform autonomous navigation in an outdoor environment. 
 
 # Getting started 
-In our lawn mower project, our mobile base is Ardumower which is an open source platform. Details regaring the hardware can be found under; https://www.ardumower.de/index.php/de/ 
+In our lawn mower project, our mobile base is Ardumower which is an open source platform. Details regaring the hardware can be found under; https://www.ardumower.de/
 
 This package performs outdoor navigation. It can navigate in lawn while avoiding obstacles. This repo is made to run on a Ardumower, NVIDIA Jetson Nano with IMU (AdaFruit) and Hokuyo URG-04LX-UG01 lidar. Android GPS was also tested but NOT included in this repository. 
 
